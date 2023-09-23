@@ -1,2 +1,3 @@
 *.txt
-./learning/package.json
+/learning/*.json
+/learning/node_modules
