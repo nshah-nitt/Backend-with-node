@@ -20,7 +20,7 @@ function bandNameGenerator(req,res,next){
 app.use(bodyParser.urlencoded({extended :true}));
 app.use(bandNameGenerator);
 
-// configured port
+// configured port using express
 app.listen(port,()=>{
     console.log(`server is running on port ${port}`)
 })
