@@ -2,6 +2,7 @@ import express from "express";
 
 const app = express();
 const port = 3000;
+var fruit = ["banana","orange","kiwi"];
 
 app.get("/", (req, res) => {
     const today = new Date();
@@ -12,11 +13,16 @@ app.get("/", (req, res) => {
         type = "the weekend";
         adv = "it's time to have some fun !";
     }
-    res.render("index.ejs", { 
+    res.render("index.ejs", {
         dayType: type, 
         advice: adv 
     });
 });
+app.get("/hello",(req,res)=>{
+    res.render("file1.ejs",{
+        fruits:fruit
+    })
+})
 app.listen(port, () => {
     console.log(`server is running on port ${port}`);
 })
