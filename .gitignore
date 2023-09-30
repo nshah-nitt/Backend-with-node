@@ -1,4 +1,4 @@
 *.txt
 learning/*.json
 /learning/node_modules
-/learning/ejs
+/learning/ejs/
